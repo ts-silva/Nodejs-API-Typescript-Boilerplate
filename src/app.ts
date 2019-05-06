@@ -1,6 +1,5 @@
-import express from 'express'
-
 import routes from './routes'
+import express = require('express')
 
 class App {
   public express: express.Application
