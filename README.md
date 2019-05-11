@@ -1,6 +1,5 @@
 # Node.js REST API boilerplate
 
-<<<<<<< HEAD
 ## Installation requirements
 
 Before cloning API repository, make sure that you have:
@@ -48,29 +47,3 @@ yarn build
 ```
 yarn test
 ```
-=======
-## Prerequisites
-Nodejs
-Yarn
-
-## Getting Started
-clone the project
-
-run yarn on vscode terminal no install libs
-
-## Commands
-yarn run -> start the project in localhost
-
-yarn test -> run tests
-
-yarn build -> generate ./Dist folder to production enviroment
-
-### VsCode Eslint Config
-"eslint.autoFixOnSave": true, //ESLINT gera fix automatico em regras quebradas
-"eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    {"language": "typescript", "autoFix": true},
-    {"language": "typescriptreact", "autoFix": true}        
-]
->>>>>>> 44b5e52c858d66ba91e37dcbd7f51f5c15e037ec
