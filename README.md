@@ -38,9 +38,14 @@ yarn install --prod
 yarn dev
 ```
 
-- Build project and generate the /dist folder to publish on the server
+- Build project on development environment and generate the /dist folder to publish on the server
 ```
-yarn build
+yarn build:dev
+```
+
+- Build project on production environment and generate the /dist folder to publish on the server
+```
+yarn build:prod
 ```
 
 - Run unit/integration tests
