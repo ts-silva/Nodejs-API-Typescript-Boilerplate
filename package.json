@@ -1,12 +1,13 @@
 {
-  "name": "Nodejs-API-Typescript-Boilerplate",
+  "name": "nodejs_api_typescript_boilerplate",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon src/server.ts",
-    "test": "mocha -r ts-node/register __tests__/**/*.test.ts",
-    "build": "webpack"
+    "dev": "SET NODE_ENV=development&& nodemon src/server.ts",
+    "test": "SET NODE_ENV=test&& mocha -r ts-node/register __tests__/**/*.test.ts",
+    "build:dev": "SET NODE_ENV=development&& webpack",
+    "build:prod": "SET NODE_ENV=production&& webpack"
   },
   "devDependencies": {
     "@babel/core": "^7.4.4",
@@ -38,6 +39,7 @@
     "webpack-node-externals": "^1.7.2"
   },
   "dependencies": {
+    "dotenv": "^8.0.0",
     "express": "^4.16.4",
     "gulp": "^4.0.2",
     "path": "^0.12.7"

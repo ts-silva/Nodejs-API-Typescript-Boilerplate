@@ -2,7 +2,7 @@ const path = require('path')
 const nodeExternals = require('webpack-node-externals')
 
 const {
-  NODE_ENV = 'production'
+  NODE_ENV = process.env.NODE_ENV
 } = process.env
 module.exports = {
   entry: './src/server.ts',
